@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -507,4 +508,515 @@ button {
 
 #rating-3 {
     width: 76px;
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+/* hero + nav section */
+header {
+    height: 100px;
+    background-color: #D1E9F6;
+    padding: 8px 96px;
+    color: #000000;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 190px;
+    height: 80px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    width: 604px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 14px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+}
+
+.menu li a:hover,
+.menu li a.active {
+    background-color: #FFB400;
+    border-radius: 5px;
+}
+
+/* skill section */
+.skills-section {
+    padding: 60px 98px 0px 98px;
+    background-color: #F6EACB;
+    text-align: center;
+}
+
+.skills-header h2 {
+    color: #2B2B2B;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.55px;
+}
+
+.skills-header p {
+    color: #767676;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.skill-card {
+    background-color: #FFF5E4;
+    padding: 20px;
+    text-align: left;
+    height: 316px;
+    width: 385px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.skill-card h3 {
+    color: #2B2B2B;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.25px;
+}
+
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+.skill-bar span {
+    display: block;
+    color: #767676;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.progress-shell {
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+    border: 0.5px solid #FFB703;
+    border-radius: 30px;
+    position: relative;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #FFB703;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+}
+
+.skill-percentage {
+    float: right;
+    font-size: 14px;
+    color: #333;
+}
+
+.add-skill-button {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+}
+
+.add-skill-button button {
+    background-color: #FFB703;
+    color: #000000;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 151px;
+    height: 51px;
+    padding: 17px 16px 17px 16px;
+    border-radius: 5px;
+}
+
+.add-skill-button button:hover {
+    background-color: #e09b00;
+}
+
+/* Dialog box */
+button {
+    background-color: #FFB400;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.dialog-content {
+    background-color: #FFF5E4;
+    padding: 36px 28px 36px 28px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 833px;
+    height: 700px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.dialog-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 54.38px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.form-group input {
+    width: 777px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #D1E9F6;
+}
+
+.skills-dialog-container {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+}
+
+.skills-dialog-header {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#label1 {
+    margin-right: 505px;
+}
+
+.skills-heading {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.4px;
+    color: #2B2B2B;
+}
+
+.form-group label {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27.5px;
+    color: #2B2B2B;
+}
+
+#domain {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.25px;
+    color: #2B2B2B;
+}
+
+.skills-dialog-header span {
+    width: 48%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.25px;
+    color: #2B2B2B;
+
+}
+
+.skill-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-row input {
+    background-color: #D1E9F6;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.skill {
+    width: 600px;
+    height: 50px;
+}
+
+.proficiency {
+    width: 150px;
+    height: 50px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.button-group button {
+    width: 151px;
+    height: 51px;
+    padding: 17px 16px 17px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.94px;
+}
+
+.cancel {
+    background-color: #FFFFFF;
+    color: #FF5252;
+    border: 1px solid #FF5252;
+    border-radius: 5px;
+}
+
+/* Footer section */
+.footer {
+    background-color: #F6EACB;
+    padding: 40px 20px 20px 20px;
+    color: #333;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1244px;
+    margin: 0 auto;
+}
+
+.footer-links-portfolio-connect {
+    display: flex;
+    width: 780px;
+    height: 202px;
+    gap: 170px;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 137px;
+    margin: 0 auto;
+    width: 970px;
+    height: 144px;
+}
+
+.footer-logo {
+    width: 140px;
+    height: 144px;
+}
+
+.footer-ratings,
+.footer-links,
+.footer-portfolio,
+.footer-connect {
+    text-align: left;
+}
+
+.footer-links {
+    width: 141px;
+    height: 202px;
+}
+
+.footer-portfolio {
+    width: 174px;
+    height: 202px;
+}
+
+.footer-connect {
+    width: 125px;
+    height: 157px;
+}
+
+.footer-links h3,
+.footer-portfolio h3,
+.footer-connect h3 {
+    width: 114px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.footer-ratings {
+    margin: 0 234px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 177px;
+    height: 230px;
+}
+
+.rating-item {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.rating-logo {
+    height: 40px;
+    margin-right: 10px;
+    display: block;
+    border-radius: 8px;
+}
+
+.rating-text {
+    margin-bottom: 20px;
+    color: #767676;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+}
+
+.footer-links ul,
+.footer-portfolio ul,
+.footer-connect ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-portfolio li,
+.footer-connect li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-portfolio a,
+.footer-connect a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer-links a:hover,
+.footer-portfolio a:hover,
+.footer-connect a:hover {
+    color: #000;
+}
+
+.footer-bottom {
+    color: #767676;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+    width: 283px;
+    height: 56px;
+    padding: 16px 0px 16px 0px;
+}
+
+.copy {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.social-icon {
+    height: 25px;
+}
+
+#img_linkedin {
+    width: 100px;
+}
+
+#img_instagram {
+    width: 125px;
+}
+
+#img_facebook {
+    width: 107px;
+}
+
+#rating-1 {
+    width: 91px;
+}
+
+#rating-2 {
+    width: 73px;
+}
+
+#rating-3 {
+    width: 76px;
+>>>>>>> 164ff332b222243a328af5a73a5043c896df07fb
 }
