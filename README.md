@@ -17,9 +17,14 @@ Project Showcase: A dedicated section to display my projects, each with a brief 
 
 Contact Form: An interactive contact form to allow visitors to reach out to me directly from the website.
 
-Technologies Used
+Technologies Used:
+
 HTML5: For structuring the content and elements on the page.
+
 CSS3: For styling the website, including animations and transitions.
+
 JavaScript: For adding interactivity, form validation, and DOM manipulation.
+
 Font Awesome: For adding icons to various parts of the site.
+
 Google Fonts: For custom typography.
