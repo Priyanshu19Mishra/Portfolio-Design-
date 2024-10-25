@@ -1,4 +1,4 @@
-## Welcome to the Portfolio Design of the Portfolio Page
+## Welcome to the Portfolio Design 
 
 An integration of CSS, JS and  HTML for creating an interactive portfolio page.
 
